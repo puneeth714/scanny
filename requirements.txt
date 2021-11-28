@@ -1,0 +1,6 @@
+PyYAML
+colorama
+pyfiglet
+PyInquirer
+python-binance
+telethon

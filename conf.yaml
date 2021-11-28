@@ -1,0 +1,32 @@
+#This is the config file for Crypto-bot
+
+debug_mode: true
+python_path: /home/puneeth/envs/pump_and_dump/bin/python3
+trade_configs:
+
+  #Put comments here
+
+  market-trade-one:
+    #Coin pairing for trade
+    pairing: BTC
+    #Currently, only market is available, keep unchanged
+    order_type: market
+    #Amount from wallet to use for trade buy; range 0 to 1
+    buy_qty_from_wallet: 1
+    #Profit margin multiplier; 0.5 equals 50% gain
+    profit_margin: 0.2
+    #Amount from wallet to use for trade sell; range 0 to 1
+    sell_qty_from_wallet: 1
+    #Refresh interval in milliseconds to check market for current price
+    refresh_interval: 10
+    #Timeout in milliseconds if profit margin doesn't reach intended value; 25 seconds
+    sell_fallback_timeout_ms: 5000
+
+  market-trade-two:
+    pairing: BTC
+    order_type: market
+    buy_qty_from_wallet: 0.75
+    profit_margin: 2
+    sell_qty_from_wallet: 1
+    refresh_interval: 100
+    sell_fallback_timeout_ms: 5000
